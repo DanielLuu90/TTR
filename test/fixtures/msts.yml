@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ten: MyString
+  noicutru: MyString
+  mst: MyString
+  cmnd: MyString
+  ngaycap: MyString
+  noicap: MyString
+
+two:
+  ten: MyString
+  noicutru: MyString
+  mst: MyString
+  cmnd: MyString
+  ngaycap: MyString
+  noicap: MyString

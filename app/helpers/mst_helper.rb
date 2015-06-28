@@ -1,0 +1,2 @@
+module MstHelper
+end

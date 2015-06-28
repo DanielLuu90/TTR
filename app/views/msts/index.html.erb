@@ -1,0 +1,29 @@
+<h1>Mst#index</h1>
+<div class="well">
+	<% form_for msts_path do %>
+		<%= text_field_tag :keyword %>
+		<%= submit_tag %>
+	<% end %>
+</div>
+<%= will_paginate @list %>
+<table class="table table-stripe table-bordered">
+	<tr>
+		<th>CMND</th>
+		<th>Tên</th>
+		<th>MST</th>
+		<th>Ngày cấp</th>
+		<th>Nơi cấp</th>
+		<th>Cư trú</th>
+	</tr>
+	<% @list.each do |item| %>
+		<tr>
+			<td><%= item.cmnd %></td>
+			<td><%= item.ten %></td>
+			<td><%= item.mst %></td>
+			<td><%= item.ngaycap %></td>
+			<td><%= item.noicap %></td>
+			<td><%= item.noicutru %></td>
+		</tr>
+	<% end %>
+</table>
+<%= will_paginate @list %>
